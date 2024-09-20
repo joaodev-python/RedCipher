@@ -4,3 +4,5 @@
 # Features
 - Encrypts files in a directory.
 - Generates a ransom note with decryption instructions.
+
+# Discord of creator: jp_dev_
